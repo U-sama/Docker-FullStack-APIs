@@ -1,0 +1,22 @@
+version: '3'
+services:
+  frontend:
+    # image: front-end
+    image: usamamohamed/angular-front-end:2.0
+    ports:
+      - "8080:80"
+
+  backend:
+    # image: ml-model-2
+    image: usamamohamed/tf-ml-model:1.0
+    ports:
+      - "8000:80"
+
+  nginx:
+    # image: nginxproxy
+    image: usamamohamed/nginxproxy
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend

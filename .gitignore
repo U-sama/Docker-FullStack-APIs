@@ -1,0 +1,11 @@
+MLmodel/myenv/*
+MLmodel/__pycache__/*
+MLmodel/microsoft-catsvsdogs-dataset/*
+MLmodel/microsoft-catsvsdogs-dataset.zip
+MLmodel/my_model.h5
+MLmodel/my_model.keras
+MLmodel/my_model1.h5
+
+FrontEnd/image-classification-app/.angular/*
+FrontEnd/image-classification-app/node_modules/*
+FrontEnd/image-classification-app/.vscode/*

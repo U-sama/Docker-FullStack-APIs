@@ -1,0 +1,16 @@
+version: '3'
+services:
+  # FastAPI Backend
+  ml-model:
+    build:
+      context: ./MLmodel  # Path to the directory containing the Dockerfile
+    ports:
+      - "8000:80"  # Map container port 80 to host port 8000
+
+
+  # Angular Frontend
+  angular:
+    build:
+      context: ./FrontEnd/image-classification-app  # Path to the directory containing the Dockerfile 
+    ports:
+      - "8080:80"  # Map container port 80 to host port 8080

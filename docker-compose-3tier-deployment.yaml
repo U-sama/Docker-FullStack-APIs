@@ -1,0 +1,17 @@
+version: '3'
+services:
+  frontend:
+    image: usamamohamed/angular-front-end:2.0
+
+
+  backend:
+    image: usamamohamed/tf-ml-model:1.0
+
+
+  nginx:
+    image: usamamohamed/nginxproxy
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend

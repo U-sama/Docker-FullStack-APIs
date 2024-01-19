@@ -1,0 +1,13 @@
+  version: '3'
+  services:
+    ml-model:
+      image: usamamohamed/tf-ml-model:1.0
+      ports:
+       - "8000:80"
+    angular:
+      image: usamamohamed/angular-front-end:2.0
+      ports:
+       - "8080:80"
+      environment:
+       - MLURL = http://ip172-18-0-25-cm3eebcs9otg009qnl70-8000.direct.labs.play-with-docker.com/predict
+      

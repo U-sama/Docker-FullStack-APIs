@@ -1,0 +1,24 @@
+<div class="app-container">
+  <h1 class="app-title">Cats & Dogs Image Classification App</h1>
+
+  <div class="file-input-container">
+    <input type="file" (change)="onFileSelected($event)" id="fileInput">
+    <label for="fileInput" class="file-input-label">Choose Image</label>
+  </div>
+
+  <div *ngIf="imageUrl" class="image-container">
+    <img [src]="imageUrl" alt="Uploaded Image" class="uploaded-image">
+  </div>
+
+  <button class="predict-button" (click)="onPredict()">Predict</button>
+
+  <div *ngIf="prediction" class="prediction-container">
+    <p class="prediction-text">
+      Predicted Class: <span class="predicted-class">{{ prediction.class }}</span>
+    </p>
+    <p class="prediction-text">
+      Response Time: <span class="response-time">{{ prediction.response_time }} seconds</span>
+    </p>
+  </div>
+</div>
+

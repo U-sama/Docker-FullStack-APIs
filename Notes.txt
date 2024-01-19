@@ -1,0 +1,1 @@
+scp .\docker-compose-3tier.yaml ip172-18-0-48-cm3h42ks9otg009qnrvg@direct.labs.play-with-docker.com:/root
