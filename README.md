@@ -1,2 +1,3 @@
 # FullStack-ML-Backend-FrontEnd-Proxy
  
+Cat & Dog Image Classifier project featuring a robust ML model API built with FastAPI and TensorFlow for image classification. Employed Docker to containerize both the ML model API and the frontend Angular application, ensuring scalability and deployment consistency. Implemented an NGINX reverse proxy container to facilitate seamless communication between the frontend and backend components. Orchestrated project deployment using a YAML configuration file, hosted Docker images on Docker Hub, and optimized networking for efficient data exchange. Successfully delivered an end-to-end solution for accurate image classification, showcasing expertise in full-stack development, containerization, and deployment methodologies.
